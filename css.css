@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    display: flex;
+    align-items: stretch;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.wrap > div{
+    width: 50%;
+    position: relative;
+    box-sizing: border-box;
+}
+.text{
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    transition: all 500ms ease-out;
+    left: 0;
+    padding: 0 20px;
+}
+.activElem{
+    top: unset;
+    transform: none;
+}
+.wrap-img{
+    z-index: 10;
+}
